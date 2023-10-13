@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>MHTV+</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://releases.flowplayer.org/7.2.7/skin/skin.css"
+    />
+    <!-- hls.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@0.11.0/dist/hls.light.min.js"></script>
+    <!-- flowplayer -->
+    <script src="flowplayer.min.js"></script>
+
+    <script src="jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+    <center>
+      <div class="tvbox">
+        <div id="player" class="flowplayer fp-mute">
+          <script>
+            flowplayer("#player", {
+              live: true, // set if it's a livestream
+              ratio: 9 / 16, // set the aspect ratio of the stream
+              autoplay: true,
+              mutedAutoplay: false,
+              share: false,
+			  poster:'https://www.appcreator24.com/srv/imgs/gen/2458024_ico.png?v=9',
+              clip: {
+                sources: [
+                  // path to the HLS m3u8
+                  {
+                    type: "application/x-mpegurl",
+                    src: "https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8",
+                  },
+                ],
+              },
+            });
+          </script>
+        </div>
+        <center>
+					
+<button   onclick="window.location.reload();">refre</button>
+<h2 style="color:#fff; margin-left: -280px;">LIVE</h2>
+          <p></p>
+		  <div class="div">
+            <a
+            href="javascript:void(0)"
+            onclick="flowplayer(0).load('http://172.16.29.28/hls/sports3.m3u8')"
+            class="tv1">
+			<img
+              src="https://www.appcreator24.com/srv/imgs/seccs/24747047_ico.png?ts=1697100391'"
+              height="86px"
+              width="86px"></a>
+
+          <a
+            href="javascript:void(0)"
+            onclick="flowplayer(0).load('https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebanglahd/default/index.m3u8')"
+            class="tv1">
+			<img
+              src="https://www.appcreator24.com/srv/imgs/seccs/27313996_ico.png?ts=1697098989'"
+              height="86px"
+              width="86px"></a>
+			  
+		  <a
+            href="javascript:void(0)"
+            onclick="flowplayer(0).load('https://ott.sonyplex.com:444/play/V7bMhseWvzq2L18X8hGbefmhw9o1yNtqn1S2CY6Yyi8/m3u8')"
+            class="tv1">
+			<img
+              src="https://vectorseek.com/wp-content/uploads/2023/06/ICC-Cricket-World-Cup-Logo-2023-Vector-01.jpg'"
+              height="86px"
+              width="86px"></a>
+			  
+			  </div>
+        </center>
+      </div>
+    </center>
+  </body>
+</html>
